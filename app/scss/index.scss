@@ -1,0 +1,106 @@
+// @import '../../node_modules/slick-carousel/slick/slick.scss';
+// @import '../../node_modules/magnific-popup/src/css/main.scss';
+@import 'global/global';
+
+
+
+.header {
+    padding: 40px 0 25px;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    // backdrop-filter: blur(12px);
+    // background-color: rgba($l, 0.6);
+
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 85px;
+        }
+
+        &:last-child {
+            margin-left: auto;
+        }
+    }
+
+    &__link {
+        text-transform: uppercase;
+        color: $w;
+
+        &--dark {
+            color: $b;
+        }
+    }
+}
+
+.hero {
+    //компенсатор 
+    padding-top: 86px;
+
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__container {
+        padding-top: 50px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: $w;
+        font-size: 60px;
+        max-width: 40%;
+    }
+
+    &__subtitle {
+        display: block;
+        font-weight: 300;
+        font-size: 40px;
+        margin-bottom: 34px;
+    }
+}
+
+.photos {
+    text-align: right;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 60px;
+        column-gap: 20px;
+        margin-bottom: 60px;
+    }
+}
+
+.about {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+    &__content {
+        max-width: 590px;
+        padding-top: 130px;
+    }
+
+    &__title {
+        font-size: 48px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        letter-spacing: -0.01em;
+
+        p:not(:last-child) {
+            margin-bottom: 65px;
+        }
+    }
+}
