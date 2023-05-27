@@ -8,8 +8,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Red+Hat+Text&display=swap"
+    rel="stylesheet">
 
 
   <!-- <base href="/anna/" /> -->
@@ -31,9 +31,6 @@
 
 <body class="home">
 
-
-
-
   <header class="header">
     <div class="container">
       <nav class="header__menu">
@@ -43,13 +40,13 @@
         </button>
         <ul class="header__list">
           <li class="header__item">
-            <a class="header__link" href="">About me</a>
+            <a class="header__link header__link--light" href="">About me</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="">Projects</a>
+            <a class="header__link header__link--light" href="">Projects</a>
           </li>
           <li class="header__item">
-            <a class="header__link header__link--dark" href="">Contact me</a>
+            <a class="header__link" href="">Contact me</a>
           </li>
         </ul>
         <div class="mobile-menu">
@@ -65,14 +62,13 @@
   </header>
 
   <main>
-    <section class="section hero" style="background-image: url('./images/hero.jpg');">
+    <section class="section hero" style="background-image: url('./images/index/hero.jpg');">
       <div class="container hero__container">
-        <h1 class="hero__title">
-          <span class="hero__subtitle">
+        <h1 class="hero__title-inner">
+          <span class="hero__uptitle">
             Photographer
           </span>
-          Anna Melnykova
-
+          <span class="title title--light">Hanna Melnykova</span>
         </h1>
       </div>
 
@@ -81,31 +77,61 @@
       <div class="container">
         <ul class="photos__list">
           <li class="photos__item">
-            <img src="./images/index/1.jpg" alt="" width="670" height="1000">
+            <img class="photos__img" src="./images/index/photos/1.jpg" alt="" width="670" height="890">
           </li>
           <li class="photos__item">
-            <img src="./images/index/2.jpg" alt="" width="670" height="1000">
+            <img class="photos__img" src="./images/index/photos/2.jpg" alt="" width="670" height="461">
+          </li>
+          <li class="photos__item photos__item--center">
+            <img class="photos__img" src="./images/index/photos/3.jpg" alt="" width="670" height="890">
           </li>
           <li class="photos__item">
-            <img src="./images/index/3.jpg" alt="" width="1015" height="1004">
+            <img class="photos__img" src="./images/index/photos/4.jpg" alt="" width="670" height="890">
           </li>
           <li class="photos__item">
-            <img src="./images/index/4.jpg" alt="" width="325" height="325">
+            <img class="photos__img" src="./images/index/photos/5.jpg" alt="" width="670" height="890">
           </li>
           <li class="photos__item">
-            <img src="./images/index/5.jpg" alt="" width="670" height="461">
+            <img class="photos__img" src="./images/index/photos/6.jpg" alt="" width="1014" height="660">
           </li>
           <li class="photos__item">
-            <img src="./images/index/6.jpg" alt="" width="666" height="461">
+            <img class="photos__img" src="./images/index/photos/7.jpg" alt="" width="670" height="670">
           </li>
           <li class="photos__item">
-            <img src="./images/index/7.jpg" alt="" width="1356" height="1360">
+            <img class="photos__img" src="./images/index/photos/8.jpg" alt="" width="670" height="435">
+          </li>
+          <li class="photos__item">
+            <img class="photos__img" src="./images/index/photos/9.jpg" alt="" width="1016" height="1023">
+          </li>
+          <li class="photos__item">
+            <img class="photos__img" src="./images/index/photos/10.jpg" alt="" width="324" height="497">
+          </li>
+          <li class="photos__item">
+            <img class="photos__img" src="./images/index/photos/11.jpg" alt="" width="495" height="658">
+          </li>
+          <li class="photos__item">
+            <img class="photos__img" src="./images/index/photos/12.jpg" alt="" width="497" height="661">
+          </li>
+          <li class="photos__item">
+            <img class="photos__img" src="./images/index/photos/13.jpg" alt="" width="669" height="882">
+          </li>
+          <li class="photos__item">
+            <img class="photos__img" src="./images/index/photos/14.jpg" alt="" width="670" height="437">
+          </li>
+          <li class="photos__item">
+            <img class="photos__img" src="./images/index/photos/15.jpg" alt="" width="900" height="890">
+          </li>
+          <li class="photos__item">
+            <img class="photos__img" src="./images/index/photos/16.jpg" alt="" width="440" height="585">
+          </li>
+          <li class="photos__item photos__item--left">
+            <img class="photos__img" src="./images/index/photos/17.jpg" alt="" width="669" height="890">
           </li>
         </ul>
         <a class="details-link photos__details-link" href="">All projects</a>
       </div>
     </section>
-    <section class="section about">
+    <!-- <section class="section about">
       <div class="container about__container">
         <div class="about__content">
           <h2 class="about__title">
@@ -131,15 +157,99 @@
         </div>
         <img class="about__img" src="./images/anna.jpg" alt="" width="670" height="844">
       </div>
-    </section>
+    </section> -->
     <section class="section contact">
       <div class="container">
-        dfgdf
+        <div class="contact__inner">
+
+          <h2 class="title title--big">Contact me</h2>
+
+          <address class="contact__address">
+            <ul class="contact__list">
+              <li class="contact__item">
+                <span class="contact__name">Phone</span>
+                <div class="contact__links">
+                  <a class="contact__link" href="tel:+380679064591">
+                    +38 067 906 45 91
+                  </a>
+                  <a class="contact__link" href="tel:+491746672674">
+                    +49 174 667 26 74
+                  </a>
+                </div>
+              </li>
+              <li class="contact__item">
+                <span class="contact__name">E-mail</span>
+                <a class="contact__link" href="mailto:uwphotographers@ukr.net">
+                  uwphotographers@ukr.net
+                </a>
+              </li>
+            </ul>
+          </address>
+
+
+        </div>
+        <div class="contact__inner">
+          <img src="images/index/logo/art-east.png" alt="" class="contact__logo" width="265" height="91">
+          <div class="contact__address">
+            <ul class="contact__list">
+              <li class="contact__item">
+                <span class="contact__name">Phone</span>
+                <a class="contact__link" href="tel:+4915205826249">
+                  + 49 1520 5826249
+                </a>
+              </li>
+              <li class="contact__item">
+                <span class="contact__name">E-mail</span>
+                <a class="contact__link" href="mailto:contact@arteastgallery-bk.com">
+                  contact@arteastgallery-bk.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
 
 
   </main>
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__top">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.05 2.8335H22.95C27.4833 2.8335 31.1666 6.51683 31.1666 11.0502V22.9502C31.1666 25.1294 30.301 27.2193 28.76 28.7602C27.2191 30.3011 25.1292 31.1668 22.95 31.1668H11.05C6.51665 31.1668 2.83331 27.4835 2.83331 22.9502V11.0502C2.83331 8.87097 3.699 6.78103 5.23992 5.2401C6.78084 3.69918 8.87078 2.8335 11.05 2.8335ZM10.7666 5.66683C9.41404 5.66683 8.11684 6.20415 7.1604 7.16059C6.20397 8.11702 5.66665 9.41423 5.66665 10.7668V23.2335C5.66665 26.0527 7.94748 28.3335 10.7666 28.3335H23.2333C24.5859 28.3335 25.8831 27.7962 26.8396 26.8397C27.796 25.8833 28.3333 24.5861 28.3333 23.2335V10.7668C28.3333 7.94766 26.0525 5.66683 23.2333 5.66683H10.7666ZM24.4375 7.79183C24.9071 7.79183 25.3576 7.9784 25.6897 8.31049C26.0217 8.64259 26.2083 9.09301 26.2083 9.56266C26.2083 10.0323 26.0217 10.4827 25.6897 10.8148C25.3576 11.1469 24.9071 11.3335 24.4375 11.3335C23.9678 11.3335 23.5174 11.1469 23.1853 10.8148C22.8532 10.4827 22.6666 10.0323 22.6666 9.56266C22.6666 9.09301 22.8532 8.64259 23.1853 8.31049C23.5174 7.9784 23.9678 7.79183 24.4375 7.79183ZM17 9.91683C18.8786 9.91683 20.6803 10.6631 22.0087 11.9915C23.337 13.3199 24.0833 15.1215 24.0833 17.0002C24.0833 18.8788 23.337 20.6805 22.0087 22.0088C20.6803 23.3372 18.8786 24.0835 17 24.0835C15.1214 24.0835 13.3197 23.3372 11.9913 22.0088C10.6629 20.6805 9.91665 18.8788 9.91665 17.0002C9.91665 15.1215 10.6629 13.3199 11.9913 11.9915C13.3197 10.6631 15.1214 9.91683 17 9.91683ZM17 12.7502C15.8728 12.7502 14.7918 13.1979 13.9948 13.995C13.1977 14.792 12.75 15.873 12.75 17.0002C12.75 18.1273 13.1977 19.2083 13.9948 20.0054C14.7918 20.8024 15.8728 21.2502 17 21.2502C18.1272 21.2502 19.2082 20.8024 20.0052 20.0054C20.8022 19.2083 21.25 18.1273 21.25 17.0002C21.25 15.873 20.8022 14.792 20.0052 13.995C19.2082 13.1979 18.1272 12.7502 17 12.7502Z" fill="black"/>
+                </svg>
+                
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 2.89014C9.20831 2.89014 2.83331 9.25097 2.83331 17.0851C2.83331 24.1685 8.01831 30.0476 14.79 31.1101V21.1935H11.1916V17.0851H14.79V13.9543C14.79 10.3985 16.9008 8.44347 20.145 8.44347C21.6891 8.44347 23.3041 8.71264 23.3041 8.71264V12.2118H21.5191C19.7625 12.2118 19.21 13.3026 19.21 14.4218V17.0851H23.1483L22.5108 21.1935H19.21V31.1101C22.5483 30.5829 25.5881 28.8796 27.7807 26.3077C29.9733 23.7358 31.1742 20.4648 31.1666 17.0851C31.1666 9.25097 24.7916 2.89014 17 2.89014Z" fill="black"/>
+                </svg>
+                
+            </a>
+          </li>
+        </ul>
+        <a class="footer__logo" href="">
+          <img class="footer__logo-img" src="images/index/logo/logo-uwpo.png" alt="" width="160" height="51">
+        </a>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          All rights reserved © Anna Melnykova 2023
+        </p>
+        <a class="footer__designer-link" href="https://www.linkedin.com/in/yana-kovernyk-567b13244/" target="_blank">
+          design by Yana Kovernyk
+        </a>
+      </div>
+    </div>
+  </footer>
 
 
   <script src="js/main.min.js"></script>

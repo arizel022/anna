@@ -1,27 +1,8 @@
-
 @import 'global/reset';
 
-$d: #3a3a3a;
-$d-d: darken($d, 14.45%);
-$d-l: lighten($d, 14.45%);
-
-$l: #f3f3f3;
-$l-d: darken($l, 14.45%);
-$l-l: lighten($l, 14.45%);
-
-$a: #ee4b00;
-$a-d: darken($a, 14.45%);
-$a-l: lighten($a, 14.45%);
-
-//для фокусов, для фильтра выставок
-// $s: #376b7e;
-$s: #006875;
-$s-d: darken($s, 14.45%);
-$s-l: lighten($s, 14.45%);
-
-$w: #fff;
-$b: #000;
-
+$w: #f5f5f5;
+$b: #141414;
+$s: #cf0000;
 /*
 @media (max-width: 1200px) {
         
@@ -37,15 +18,13 @@ $b: #000;
 }
 */
 
-// font-family: 'Red Hat Text'; 400 (меню)
-// font-family: 'Lato'; 300.400 (заголовок, details-link)
 
+// about-page - years Lato 700
 
 body {
     min-height: 100vh;
-
     // background-color: $l;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -53,17 +32,10 @@ body {
     letter-spacing: 0.03em;
     color: $b;
     position: relative;
-    // overflow-x: hidden;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-
-    // background: url('../images/index/noise.png'), linear-gradient(181.96deg, #FFFFFF 0.66%, #E2E2E2 70.12%, #D8D8D8 98.5%);
-
 
     &:before {
         content: '';
-        background: linear-gradient(182deg, rgba(255,255,255,1) 0%, rgba(226,226,226,1) 52%, rgba(216,216,216,1) 98%);
+        background: linear-gradient(182deg, rgba(255, 255, 255, 1) 0%, rgba(226, 226, 226, 1) 52%, rgba(216, 216, 216, 1) 98%);
         width: 100%;
         height: 100%;
         position: absolute;
@@ -85,7 +57,6 @@ body {
         top: 0;
         left: 0;
     }
-
 
     &.lock {
         overflow-y: hidden;
@@ -115,7 +86,22 @@ img {
 }
 
 .section {
-    padding-top: 230px;
+    padding-bottom: 200px;
+}
+
+.title {
+    font-size: 60px;
+    display: block;
+    text-transform: uppercase;
+    color: $b;
+
+    &--light {
+        color: $w;
+    }
+
+    &--big {
+        font-size: 80px;
+    }
 }
 
 .details-link {
@@ -264,7 +250,7 @@ img {
 //             }
 //         }
 
-        
+
 //     }
 
 //     &__icon {
