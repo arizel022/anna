@@ -4,44 +4,9 @@
 
 
 
-.header {
-    padding: 40px 0 25px;
-    position: absolute;
-    top: 0;
-    z-index: 99;
-    width: 100%;
-    // backdrop-filter: blur(12px);
-    // background-color: rgba($l, 0.6);
-
-
-    &__list {
-        display: flex;
-    }
-
-    &__item {
-        &:not(:last-child) {
-            margin-right: 85px;
-        }
-
-        &:last-child {
-            margin-left: auto;
-        }
-    }
-
-    &__link {
-        text-transform: uppercase;
-        font-family: 'Red Hat Text', sans-serif;
-        color: $b;
-
-        &--light {
-            color: $w;
-        }
-    }
-}
 
 .hero {
-    //компенсатор 
-    padding-top: 86px;
+
 
     height: 100vh;
     background-repeat: no-repeat;
@@ -93,81 +58,9 @@
     }
 }
 
-.contact {
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-
-        &:not(:last-child) {
-            margin-bottom: 125px;
-        }
-    }
-
-    &__address {
-        max-width: 666px;
-        width: 100%;
-        font-weight: 300;
-    }
 
 
 
-    &__item {
-        display: flex;
-
-        &:not(:last-child) {
-            margin-bottom: 25px;
-        }
-
-    }
-
-    &__name {
-        font-size: 38px;
-        margin-right: 68px;
-    }
-
-    &__link {
-        display: block;
-        font-size: 36px;
-
-        &:not(:last-child) {
-            margin-bottom: 5px;
-        }
-    }
-}
-
-.footer {
-    border-top: 2px solid #B9B9B9;
-    padding: 28px 0 32px;
-    &__top {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px;
-    }
-
-    &__bottom {
-        display: flex;
-        justify-content: space-between;
-        font-weight: 300;
-    }
-
-    &__designer-link {
-        border-bottom: 0.5px solid $b;
-    }
-}
-
-.social {
-    display: flex;
-    gap: 20px;
-
-    &__link {
-        width: 44px;
-        height: 44px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
 
 .about {
     &__container {
