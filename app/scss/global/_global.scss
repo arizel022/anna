@@ -99,6 +99,10 @@ img {
 main {
     //компенсатор 
     padding-top: 86px;
+
+    &.home-page {
+        padding-top: 0;
+    }
 }
 
 .container {
@@ -173,7 +177,6 @@ main {
     // backdrop-filter: blur(12px);
     // background-color: rgba($l, 0.6);
 
-
     &__list {
         display: flex;
     }
@@ -201,6 +204,8 @@ main {
 .footer {
     border-top: 2px solid #B9B9B9;
     padding: 28px 0 32px;
+    background-color: #D9D9D9;
+    color: $b;
 
     &__top {
         display: flex;
@@ -233,6 +238,7 @@ main {
 }
 
 .contact {
+
     &__inner {
         display: flex;
         justify-content: space-between;
